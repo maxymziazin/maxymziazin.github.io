@@ -1,0 +1,32 @@
+@media (max-width: 767px) {
+  .container__inner {
+    padding-top: 20px;
+  }
+
+  /* .tabs {
+    display: none;
+  } */
+
+  .date__col:first-child {
+    margin-bottom: 20px;
+  }
+
+  .date__col span {
+    width: 10%;
+  }
+
+  .manager__top {
+    display: block;
+  }
+
+  .manager__title {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 410px) {
+  .date__col span {
+    width: 12%;
+  }
+}

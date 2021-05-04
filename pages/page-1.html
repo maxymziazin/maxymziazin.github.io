@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page-1</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/jquery.formstyler.css" />
+    <link rel="stylesheet" href="../css/jquery.formstyler.theme.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <link rel="stylesheet" href="css/page-1-style.css" />
+    <link rel="stylesheet" href="css/page-1-media.css" />
+    <script
+      src="https://kit.fontawesome.com/15db948f58.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="delete-this">
+      <a class="go-to" href="../index.html">Go to index.html</a>
+      <button class="open-modal" id="open-modal">Open Modal</button>
+    </div>
+
+    <div class="wrapper">
+      <div class="container">
+        <div class="container__inner">
+          <div class="row mb-60">
+            <div class="col-12 col-md-3">
+              <div class="welcome" id="welcome">
+                <div class="welcome__title">Добро пожаловать</div>
+                <div class="welcome__text">test2</div>
+                <div class="welcome__exit"><a href="#">Выйти</a></div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-9">
+              <div class="tabs">
+                <button class="tabs__item" tabindex="1" data-filter="users">
+                  Пользователи
+                </button>
+                <button class="tabs__item" tabindex="2" data-filter="branches">
+                  Филиалы
+                </button>
+                <button class="tabs__item" tabindex="3" data-filter="catalog">
+                  Каталог
+                </button>
+                <button class="tabs__item" tabindex="4" data-filter="delivery">
+                  Доставка
+                </button>
+                <button
+                  class="tabs__item active"
+                  tabindex="5"
+                  data-filter="statistics"
+                >
+                  Статистика
+                </button>
+              </div>
+
+              <form class="main">
+                <div class="main__inner" data-type="users">
+                  <div class="main__title">Пользователи</div>
+                </div>
+                <div class="main__inner" data-type="branches">
+                  <div class="main__title">Филиалы</div>
+                </div>
+                <div class="main__inner" data-type="catalog">
+                  <div class="main__title">Каталог</div>
+                </div>
+                <div class="main__inner" data-type="delivery">
+                  <div class="main__title">Доставка</div>
+                </div>
+                <div class="main__inner active" data-type="statistics">
+                  <div class="main__title">Статистика</div>
+
+                  <div class="date">
+                    <div class="row">
+                      <div class="col-12 col-md-6 date__col">
+                        <span>от</span>
+                        <select class="select" name="select-4" id="select-4">
+                          <option value="1">дд.мм.гггг</option>
+                          <option value="2">дд.мм.гггг</option>
+                          <option value="3">дд.мм.гггг</option>
+                          <option value="4">дд.мм.гггг</option>
+                          <option value="5">дд.мм.гггг</option>
+                        </select>
+                      </div>
+                      <div class="col-12 col-md-6 date__col">
+                        <span>до</span>
+                        <select class="select" name="select-5" id="select-5">
+                          <option value="1">дд.мм.гггг</option>
+                          <option value="2">дд.мм.гггг</option>
+                          <option value="3">дд.мм.гггг</option>
+                          <option value="4">дд.мм.гггг</option>
+                          <option value="5">дд.мм.гггг</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="manager">
+                    <div class="manager__top">
+                      <div class="manager__title">Выберите менеджера:</div>
+                      <select class="manager__select" name="select-man">
+                        <option value="1">Микола Самойлов</option>
+                        <option value="2">Тарас Шевченко</option>
+                        <option value="3">Григорій Сковорода</option>
+                        <option value="4">Леся Українка</option>
+                        <option value="5">Іван Франко</option>
+                      </select>
+                    </div>
+                    <div class="manager__inner">
+                      <div class="manager__text">
+                        <span>Кол-во отправленных каталогов:</span
+                        ><span>75</span>
+                      </div>
+                      <select class="select" name="select-6" id="select-6">
+                        <option value="1">Все модели</option>
+                        <option value="2">Не все модели</option>
+                        <option value="3">Почти все модели</option>
+                        <option value="4">Модели, но не все</option>
+                        <option value="5">Все, но не модели</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="color-bars">
+                    <div class="color-bars__item">
+                      <div class="color-bars__name">
+                        1. Спец. №M125-001 (b.ax+C+N.CAB)
+                      </div>
+                      <div class="color-bars__bar">
+                        <div class="color-bars__color">
+                          <div class="color-bars__value">40</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="color-bars__item">
+                      <div class="color-bars__name">
+                        2. Спец. №M125-001 (b.ax+C+N.CAB)
+                      </div>
+                      <div class="color-bars__bar">
+                        <div class="color-bars__color">
+                          <div class="color-bars__value">20</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="color-bars__item">
+                      <div class="color-bars__name">
+                        3. Спец. №7250-003 (FCut+HC+LUX CAB+CVT)
+                      </div>
+                      <div class="color-bars__bar">
+                        <div class="color-bars__color">
+                          <div class="color-bars__value">10</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="color-bars__item">
+                      <div class="color-bars__name">
+                        4. Спец. №7250-001 (FCut+AGC+RTK+LUX CAB)
+                      </div>
+                      <div class="color-bars__bar">
+                        <div class="color-bars__color">
+                          <div class="color-bars__value">5</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="default-btn" type="button">
+                    Получить PDF
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="footer__title">© Company 2021</div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-s" id="sign-in-modal">
+      <div class="modal-s__body">
+        <div class="modal-s__title">Вход</div>
+        <input class="input modal-s__input" type="email" placeholder="Email" />
+        <input
+          class="input modal-s__input"
+          type="password"
+          placeholder="Пароль"
+        />
+        <button class="modal-s__forget-pass" id="reset-pass-btn">
+          Забыли пароль?
+        </button>
+        <button class="default-btn" type="button">Войти</button>
+      </div>
+    </div>
+
+    <div class="modal-s" id="reset-pass-modal">
+      <div class="modal-s__body">
+        <div class="modal-s__title">Восстановить пароль</div>
+        <input class="input modal-s__input" type="email" placeholder="Email" />
+        <button class="default-btn" type="button">Отправить</button>
+      </div>
+    </div>
+
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery.formstyler.min.js"></script>
+    <script src="js/page-1-main.js"></script>
+    <script src="../js/modal.js"></script>
+  </body>
+</html>

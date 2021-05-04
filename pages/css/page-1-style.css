@@ -1,0 +1,190 @@
+/* =========================== Переопределение стилей =========================== */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding: 0;
+}
+
+.container__inner {
+  padding: 30px 0 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__inner {
+  display: none;
+}
+
+.main__inner.active {
+  display: block;
+}
+
+.select {
+  margin: 0;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+/* =========================== Tabs =========================== */
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs__item {
+  width: 19.5%;
+  padding: 16px 0px;
+
+  background-color: #d6e5fb;
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  color: #327be9;
+}
+
+.tabs__item:focus {
+  outline: 2px solid black;
+}
+
+.tabs__item.active {
+  background-color: #fff;
+  font-weight: 600;
+}
+
+/* =========================== Date =========================== */
+
+.date {
+  margin-bottom: 40px;
+}
+
+.date__col {
+  display: flex;
+  align-items: center;
+}
+
+.date__col span {
+  width: 15%;
+
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+/* =========================== Manager =========================== */
+
+.manager {
+  margin-bottom: 20px;
+}
+
+.manager__top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.manager__title {
+  margin-right: 15px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.manager__select {
+  border: none;
+  font-size: 16px;
+  line-height: 125%;
+  color: #333333;
+}
+
+.manager__inner {
+  padding: 20px;
+
+  background-color: #f4f4f4;
+}
+
+.manager__text {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.manager__text > span:first-child {
+  margin-right: 10px;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: #777777;
+}
+
+.manager__text > span:last-child {
+  font-weight: 600;
+  color: #333333;
+}
+
+/* =========================== Color-bars =========================== */
+
+.color-bars {
+  position: relative;
+  padding-bottom: 70px;
+}
+
+.color-bars::after {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  height: 1px;
+
+  background-color: #cdcdcd;
+}
+
+.color-bars__item {
+  margin-bottom: 20px;
+}
+
+.color-bars__item:last-child {
+  margin-bottom: 0;
+}
+
+.color-bars__name {
+  margin-bottom: 12px;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+.color-bars__bar {
+  position: relative;
+  height: 30px;
+}
+
+.color-bars__color {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+}
+
+.color-bars__value {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}

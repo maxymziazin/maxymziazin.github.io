@@ -1,0 +1,40 @@
+@media (max-width: 767px) {
+  body {
+    padding-top: 20px;
+  }
+
+  .welcome,
+  .main {
+    padding: 20px;
+  }
+
+  .characteristics__content li {
+    flex-wrap: wrap;
+  }
+
+  .characteristics__type,
+  .characteristics__name {
+    width: 100%;
+  }
+
+  .characteristics__type {
+    margin-bottom: 10px;
+  }
+
+  .characteristics__name {
+    text-align: start;
+  }
+
+  .price__input {
+    margin-bottom: 20px;
+  }
+
+  .supply__assurance,
+  .supply__term {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    margin-top: 40px;
+  }
+}
