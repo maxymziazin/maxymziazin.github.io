@@ -46,25 +46,38 @@
 
             <div class="col-12 col-md-9">
               <div class="tabs">
-                <button class="tabs__item" tabindex="1" data-filter="users">
-                  Пользователи
-                </button>
-                <button class="tabs__item" tabindex="2" data-filter="branches">
-                  Филиалы
-                </button>
-                <button class="tabs__item" tabindex="3" data-filter="catalog">
-                  Каталог
-                </button>
-                <button class="tabs__item" tabindex="4" data-filter="delivery">
-                  Доставка
-                </button>
-                <button
-                  class="tabs__item active"
-                  tabindex="5"
-                  data-filter="statistics"
-                >
+                <div class="tabs__title" id="tabs-title" tabindex="1">
                   Статистика
-                </button>
+                </div>
+                <div class="tabs__body" id="tabs-body">
+                  <button class="tabs__item" tabindex="2" data-filter="users">
+                    Пользователи
+                  </button>
+                  <button
+                    class="tabs__item"
+                    tabindex="3"
+                    data-filter="branches"
+                  >
+                    Филиалы
+                  </button>
+                  <button class="tabs__item" tabindex="4" data-filter="catalog">
+                    Каталог
+                  </button>
+                  <button
+                    class="tabs__item"
+                    tabindex="5"
+                    data-filter="delivery"
+                  >
+                    Доставка
+                  </button>
+                  <button
+                    class="tabs__item active"
+                    tabindex="6"
+                    data-filter="statistics"
+                  >
+                    Статистика
+                  </button>
+                </div>
               </div>
 
               <form class="main">
@@ -82,7 +95,6 @@
                 </div>
                 <div class="main__inner active" data-type="statistics">
                   <div class="main__title">Статистика</div>
-
                   <div class="date">
                     <div class="row">
                       <div class="col-12 col-md-6 date__col">

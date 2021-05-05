@@ -33,7 +33,34 @@ body {
 
 /* =========================== Tabs =========================== */
 
-.tabs {
+.tabs__title {
+  display: none;
+  position: relative;
+  padding: 15px 20px;
+  margin-bottom: 2px;
+
+  border-radius: 1px;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.tabs__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%) rotate(135deg);
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+}
+
+.tabs__body {
   display: flex;
   justify-content: space-between;
 }

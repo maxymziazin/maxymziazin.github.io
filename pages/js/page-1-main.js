@@ -3,6 +3,12 @@ $(function () {
 
   const $tabsBtns = $(".tabs__item");
   const $mainBlocks = $(".main__inner");
+  const $tabsTitle = $("#tabs-title");
+  const $tabsBody = $("#tabs-body");
+
+  $tabsBtns.each((index, elem) => {
+    $(elem).hasClass("active") ? $tabsTitle.text($(elem).text()) : null;
+  });
 
   $tabsBtns.on("click focus", (e) => {
     $tabsBtns.each((index, elem) => {
@@ -18,6 +24,12 @@ $(function () {
         ? $(elem).addClass("active")
         : $(elem).removeClass("active");
     });
+
+    $tabsTitle.text($(e.target).text());
+  });
+
+  $tabsTitle.on("click", (e) => {
+    $tabsBody.slideToggle(200);
   });
 
   //! Custom select
@@ -42,4 +54,8 @@ $(function () {
       $barColor.css({ backgroundColor: "#3fb715", width: `${value * 2}%` });
     }
   });
+
+  //! Datepicker
+
+  // $("#datepicker").datepicker();
 });

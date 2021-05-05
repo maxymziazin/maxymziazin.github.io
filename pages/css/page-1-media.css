@@ -3,9 +3,23 @@
     padding-top: 20px;
   }
 
-  /* .tabs {
+  .tabs__title {
+    display: block;
+  }
+
+  .tabs__body {
     display: none;
-  } */
+  }
+
+  .tabs__item {
+    display: block;
+    width: 100%;
+    padding: 16px 0px;
+    border-bottom: 1px solid #f4f4f4;
+
+    background-color: rgb(233, 233, 233);
+    color: #333;
+  }
 
   .date__col:first-child {
     margin-bottom: 20px;
@@ -28,5 +42,11 @@
 @media (max-width: 410px) {
   .date__col span {
     width: 12%;
+  }
+}
+
+@media (min-width: 768px) {
+  .tabs__body {
+    display: flex !important;
   }
 }
