@@ -37,4 +37,8 @@
   .footer {
     margin-top: 40px;
   }
+
+  .modal-s__body {
+    padding: 40px 15px;
+  }
 }

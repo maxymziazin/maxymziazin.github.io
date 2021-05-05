@@ -17,10 +17,13 @@
     />
     <link rel="stylesheet" href="../css/jquery.formstyler.css" />
     <link rel="stylesheet" href="../css/jquery.formstyler.theme.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/media.css" />
     <link rel="stylesheet" href="css/page-1-style.css" />
     <link rel="stylesheet" href="css/page-1-media.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script
       src="https://kit.fontawesome.com/15db948f58.js"
       crossorigin="anonymous"
@@ -99,23 +102,21 @@
                     <div class="row">
                       <div class="col-12 col-md-6 date__col">
                         <span>от</span>
-                        <select class="select" name="select-4" id="select-4">
-                          <option value="1">дд.мм.гггг</option>
-                          <option value="2">дд.мм.гггг</option>
-                          <option value="3">дд.мм.гггг</option>
-                          <option value="4">дд.мм.гггг</option>
-                          <option value="5">дд.мм.гггг</option>
-                        </select>
+                        <input
+                          class="date__input"
+                          type="text"
+                          placeholder="дд.мм.гггг"
+                          id="datepicker-from"
+                        />
                       </div>
                       <div class="col-12 col-md-6 date__col">
                         <span>до</span>
-                        <select class="select" name="select-5" id="select-5">
-                          <option value="1">дд.мм.гггг</option>
-                          <option value="2">дд.мм.гггг</option>
-                          <option value="3">дд.мм.гггг</option>
-                          <option value="4">дд.мм.гггг</option>
-                          <option value="5">дд.мм.гггг</option>
-                        </select>
+                        <input
+                          class="date__input"
+                          type="text"
+                          placeholder="дд.мм.гггг"
+                          id="datepicker-to"
+                        />
                       </div>
                     </div>
                   </div>
@@ -227,7 +228,7 @@
       </div>
     </div>
 
-    <script src="../js/jquery-3.5.1.min.js"></script>
+    <!-- <script src="../js/jquery-3.5.1.min.js"></script> -->
     <script src="../js/jquery.formstyler.min.js"></script>
     <script src="js/page-1-main.js"></script>
     <script src="../js/modal.js"></script>
